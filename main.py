@@ -4,9 +4,19 @@ Instagram Ban Analyzer - Main Entry Point
 A tool to analyze Instagram accounts for potential ban risks.
 """
 
+import sys
+import os
+
+# ✅ Ensure 'src' package can be imported no matter where it's run from
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.abspath(os.path.join(current_dir))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
 from src.analyzer import InstagramAccountAnalyzer
 from src.ban_engine import BanRecommendationEngine
 from src.report_generator import ReportGenerator
+
 
 def main():
     """Main function to run the Instagram Ban Analyzer"""
@@ -29,6 +39,7 @@ def main():
         print(f"\n{ReportGenerator.Color.RED}Analysis interrupted by user.{ReportGenerator.Color.END}")
     except Exception as e:
         print(f"\n{ReportGenerator.Color.RED}Error during analysis: {e}{ReportGenerator.Color.END}")
+
 
 if __name__ == "__main__":
     main()
