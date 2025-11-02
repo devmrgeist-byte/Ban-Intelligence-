@@ -9,18 +9,7 @@ ban-intelligence/
 ├── README.md                    # Documentation (this file)
 ├── LICENSE                      # MIT License
 ├── .gitignore                   # Git ignore rules
-├── templates/
-│   └── index.html
-└── static/
-    ├── css/
-    │   ├── bootstrap.min.css
-    │   ├── fontawesome.min.css
-    │   └── style.css
-    └── js/
-        ├── jquery.min.js
-        ├── bootstrap.min.js
-        └── script.js
-```
+
 
 ## ✨ Features
 
