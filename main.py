@@ -4,9 +4,10 @@ Instagram Ban Analyzer - Main Entry Point
 A tool to analyze Instagram accounts for potential ban risks.
 """
 
-from src.analyzer import InstagramAccountAnalyzer
-from src.ban_engine import BanRecommendationEngine
-from src.report_generator import ReportGenerator
+# Change these imports:
+from analyzer import InstagramAccountAnalyzer
+from ban_engine import BanRecommendationEngine
+from report_generator import ReportGenerator
 
 def main():
     """Main function to run the Instagram Ban Analyzer"""
