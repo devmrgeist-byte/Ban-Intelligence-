@@ -138,7 +138,3 @@ MIT License — see the LICENSE file for details.
 **⭐ If you find this project helpful, please give it a star! ⭐**
 
 </div>
-```
-
-
-Just save this as `README.md` in your Ban Intelligence project root!
