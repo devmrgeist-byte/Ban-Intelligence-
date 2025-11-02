@@ -1,1 +1,0 @@
-# Instagram Ban Analyzer Package
