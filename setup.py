@@ -7,11 +7,11 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
     requirements = fh.read().splitlines()
 
 setup(
-    name="instagram-ban-analyzer",
-    version="1.0.0",
-    author="Your Name",
+    name="instagram-ban-analyzer-pro",
+    version="2.0.0",
+    author="Mr. Geist",
     author_email="your.email@example.com",
-    description="Advanced Instagram Account Analysis System",
+    description="Advanced Instagram Account Analysis System with Real Data",
     long_description=long_description,
     long_description_content_type="text/markdown",
     packages=find_packages(),
@@ -25,6 +25,7 @@ setup(
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
     ],
     python_requires=">=3.7",
     install_requires=requirements,
@@ -33,4 +34,5 @@ setup(
             "instagram-analyzer=main:main",
         ],
     },
+    keywords="instagram, analysis, ban, risk, social-media, security",
 )
