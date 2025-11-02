@@ -7,12 +7,18 @@ A tool to analyze Instagram accounts for potential ban risks.
 import sys
 import os
 
-# Add the current directory to Python path to fix imports
+# Add current directory to path
 sys.path.insert(0, os.path.dirname(__file__))
 
-from src.analyzer import InstagramAccountAnalyzer
-from src.ban_engine import BanRecommendationEngine
-from src.report_generator import ReportGenerator
+try:
+    from analyzer import InstagramAccountAnalyzer
+    from ban_engine import BanRecommendationEngine
+    from report_generator import ReportGenerator
+except ImportError:
+    # Try direct import
+    from src.analyzer import InstagramAccountAnalyzer
+    from src.ban_engine import BanRecommendationEngine
+    from src.report_generator import ReportGenerator
 
 def main():
     """Main function to run the Instagram Ban Analyzer"""
