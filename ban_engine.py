@@ -1,6 +1,21 @@
 from typing import Dict, List
 import random
-from .analyzer import Color
+
+class Color:
+    """ANSI color codes for terminal output"""
+    RED = '\033[91m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    BLUE = '\033[94m'
+    MAGENTA = '\033[95m'
+    CYAN = '\033[96m'
+    WHITE = '\033[97m'
+    ORANGE = '\033[38;5;208m'
+    PINK = '\033[38;5;205m'
+    PURPLE = '\033[38;5;129m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    END = '\033[0m'
 
 class BanRecommendationEngine:
     """Generate ban recommendations based on account analysis"""
